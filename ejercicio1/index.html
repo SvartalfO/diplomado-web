@@ -1,24 +1,37 @@
 <!doctype html>
-<html lang="es"> 
-	<!--
+<html lang="es">
+    <!--
 		El atributo "lang" sirve para definir el lenguaje de la pagina
 	-->
-	<head>
-		<meta charset="UTF-8" />
-		<title>Ejercicio 1</title>
-	</head>
+<head>
+<meta charset="UTF-8" />
+<title>Ejercicio 1</title>
+    <!--
+        CSS: Hojas de estilo en cascada.
+                Se puede insertar de 3 formas:
+                1 - En Línea (inline) -- No recomendada
+                2 - En el HTML en un bloque <Style>. --No recomendado pero aceptable.
+                3 - En un documento independiente -- Recomendado
+    -->
+    <!--<style>
+        p:last-child {
+            color:#00f;
+        }
+    </style>-->
+    <link rel="stylesheet" href="css/main.css" />
+</head>
 
-	<body>
-		<div>
-			<header>
-				<h1>Encabezado nivel 1</h1>
-				<!--<h2>Encabezado nivel 2</h2>
+<body>
+<div class="container" >
+    <header>
+        <h1>Ejercicio 1</h1>
+        <!--<h2>Encabezado nivel 2</h2>
 				<h3>Encabezado nivel 3</h3>
 				<h4>Encabezado nivel 4</h4>
 				<h5>Encabezado nivel 5</h5>
 				<h6>Encabezado nivel 6</h6>
-				-->
-				<!--
+				--> 
+        <!--
 					Título de libro El amor en los tiempos del colera -> [h1]
 						Capítulo 1: Florentino -> [h2]
 							Subcapítulo 1.1 -> [h3]
@@ -40,37 +53,109 @@
 						Para entrar a un carpeta usamos "/" 
 						Para salir de una carpeta usamos ".."
 				
-				-->
-				
-				
-				
-				<img src="images/bg-header.jpg" alt="" />
-			</header>
-			<nav>
-				<!--
+				--> 
+        
+        <img src="images/bg-header.jpg" alt="" /> </header>
+    <nav> 
+        <!--
 					ul (Unordered List) Lista desordenada
 					ol (Ordered List) Lista ordenada
 					li (List element) Elemento de lista
 					
 					El atributo target = "_blank" sirve para abrir la página en una nueva pestaña (tab). 
 				-->
-				<ul>
-					<li><a href="#">Inicio</a></li>
-					<li><a href="#">Servicios</a></li>
-					<li><a href="#">Productos</a></li>
-					<li><a href="#">Galería</a></li>
-					<li><a href="#">Contacto</a></li>
-				</ul>
-				
-				<!--<ol>
+        <ul>
+            <li><a href="#init">Inicio</a></li>
+            <li><a href="#services">Servicios</a></li>
+            <li><a href="#product">Productos</a></li>
+            <li><a href="#gallery">Galería</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+        
+        <!--<ol>
 					<li>Opción 1</li>
 					<li>Opción 2</li>
 					<li>Opción 3</li>
-				</ol>-->
-				
-			</nav>
-			<main></main>
-			<footer></footer>
-		</div>
-	</body>
+				</ol>--> 
+        
+    </nav>
+    <main>
+        <section id="init">
+            <h2>Inicio</h2>
+            <img src="images/img1.jpg" alt="" />
+            
+            <a href="#">Elemento en Línea 1</a>
+            <a href="#">Elemento en Línea 2</a>
+            <p>Lorem ipsum dolor.</p>
+            <a href="#">Elemento en Línea 3</a>
+            
+            <p id="verde" class="azul">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum non delectus labore blanditiis ratione at perferendis tempore aperiam commodi in eaque, laudantium nulla ipsam aliquam asperiores sequi quasi perspiciatis voluptatem!</p>
+            <p >Adipisci illo sapiente enim culpa id, dolorum, reiciendis fuga harum mollitia delectus similique incidunt obcaecati odio distinctio nostrum quod, accusamus ut cumque consequuntur! Laudantium minima, qui fugiat illum optio autem.</p>
+        </section>
+        <section id="services" class="section section-services">
+            <h2>Servicios</h2>
+            <img src="images/img2.jpg" alt="" />
+            <p class="azul">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae quas provident a accusantium, ipsam dolor nam omnis, magnam ipsum odio eveniet iste temporibus quod perspiciatis aliquam. Dolore quibusdam, quam assumenda!</p>
+            <p>Accusamus repudiandae adipisci animi quam alias illo eveniet atque corrupti, nam, quo temporibus hic illum debitis qui sed neque praesentium perferendis non voluptatibus error quia. Modi vero expedita soluta voluptatem.</p>
+        </section>
+        <section id="product">
+            <h2>Productos</h2>
+            <img src="images/img3.jpg" alt="" />
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit dignissimos tempore quis laborum sit, vero accusamus magnam quod consequuntur iste dolor qui, sapiente repellat tenetur officiis suscipit quo omnis placeat.</p>
+            <p>Dolorum nisi officia distinctio id ipsum eaque quae iste debitis, eligendi optio facere ad iusto sunt delectus expedita sint obcaecati doloribus reprehenderit dignissimos a sit aut cum! Laudantium laboriosam, unde.</p>
+        </section>
+        <section id="gallery">
+            <h2>Galería</h2>
+            <img src="images/img4.jpg" alt="" />
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id architecto dolores tempore optio rem eligendi odio dolor, sapiente, odit earum molestias inventore voluptatem distinctio obcaecati hic quos, eos possimus nisi.</p>
+            <p>Quaerat sed, eum dolorem natus repellat maxime aperiam animi qui possimus, et voluptates. Et magni, sequi natus sed modi facere nesciunt, assumenda dignissimos mollitia! Rerum obcaecati quasi culpa perspiciatis sit.</p>
+        </section>
+        <section id="contact">
+            <h2>Contacto</h2>
+            <img src="images/img5.jpg" alt="" />
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui tenetur alias consectetur minus repudiandae illum quod perferendis perspiciatis similique sed, labore dolor maiores saepe, omnis fuga ut molestiae dolores atque.</p>
+            <p>A quaerat doloremque, fugiat commodi saepe blanditiis nam ex! Provident reprehenderit, veritatis numquam rerum, porro quos saepe blanditiis fugiat ipsam unde voluptatibus sapiente doloribus corrupti perspiciatis aliquid nulla, amet, doloremque.</p>
+            
+        </section>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados | edumac 2018 | Tiare</p>
+    </footer>
+</div>
+    <!--
+         Reglas y convenciones de valores del atributo "id" 
+            Reglas:
+                -No espacios
+                -No caracteres especiales
+                -No guión bajo
+
+            Convenciones:
+                - Siempre inglés
+                - Formato CamelCase-LowerCase:
+                    - CamelCase-LowerCase: primeras minusculas las demas mayuscula
+                        sectionServices 
+                        mySectionServices
+                        mySectionServicesWeb
+    
+                   (- CamelCase-UpperCase: SectionServices) NO, solo es referencia
+
+ 
+         Reglas y convenciones de valores del atributo "Class" 
+            Reglas:
+                -No espacios
+                -No caracteres especiales
+                -No guión bajo
+
+            Convenciones:
+                - Siempre inglés
+                - Siempre minúsculas y palabras separadas por guión medio
+
+                        section-services
+                        my-section-services
+                        my-section-services-web
+                
+   
+                
+    -->
+</body>
 </html>

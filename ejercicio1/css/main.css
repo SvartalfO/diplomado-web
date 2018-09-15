@@ -1,0 +1,204 @@
+@charset "UTF-8";
+
+/*
+    Sintaxis de reglas CSS:
+
+        Selector:Le va a indicar al navegador cual es el elemento que se modificará.
+
+        Lista de propiedades: Propiedades que se modifican.
+
+        selector {
+            nombre-propiedad: valor;
+            Color: #f00;
+            font-family: arial;
+            font-size: 30px;
+        }
+
+        Selectores básicos:
+            1. Etiqueta 
+            2. Clase:
+                Se utiliza mediante el atributo "class":
+                El atributo "class" sirve principalmente para añadir estilos CSS a un determinado elemento
+
+                sintaxis del selector: un signo de punto "." como prefijo del valor de atributo "class".
+
+            3. Identificador (No recomendado):
+                Se utiliza mediante el atributo "id"
+                El atributo "id" sirve principalmente para añadir comportamientos Java Script a un determinado elemento
+
+                sintaxis del selector: un signo de número "#" como prefijo del valor de atributo "id".
+*/
+
+/*  Selector por etiqueta */
+/*p {
+    color:#f00;
+}*/
+
+/*  Selector por clase */
+/*.azul {
+    color: #00f;
+}*/
+
+/* Selector por Id */
+/*#verde{
+    color:#0f0;
+}*/
+
+body {
+    font-family: arial;
+    /*font-size: 16px;*/
+    color: #333;
+    margin: 0;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    /*
+        Elementos de bloque se centran con margen (margin) automático a la izquierda y a la derecha
+    
+        Elementos en linea se centran con la propiedad "text-align".
+    
+        A un elemento en linea podemos darle comportamiento de bloque con: "display: block"
+    
+        A un elemento en bloque podemos darle comportamiento de bloque con: "display: inline"
+    */
+}
+
+h1{
+    font-size: 30px;
+    color: #0E5F77;
+    font-weight: 400;
+    /*
+        200 -> think
+        300 -> (light)
+        400 -> (normal)
+        600 -> semibold
+        700 -> (bold)
+        800 -> black
+        900 -> extra black
+    */
+    text-transform: uppercase;
+   
+    
+}
+
+nav ul{
+    margin:20px;
+    padding:0;
+    list-style-type: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 20px;
+    
+}
+
+nav li:first-child{
+    margin-left: 0;
+}
+
+nav a{
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #0E5F77;
+        
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #CDB064;
+
+
+/*
+    Propiedades del modelo e cajas:
+
+    - background: Es una propiedad general
+        - background-color: un valor hexadecimal
+        - background-image: url de la imagen
+        - background-repeat: [repeat / no-repeat]
+        - background-attachment:[scroll / fixed]
+        - background-position: 
+            Posición X: [left / center / right / px]
+            Psosición Y: [top / center / bottom / px]
+        
+    - border:
+        - Ancho de borde en px
+        - Estilo del borde: [solid / double ...]
+        - Color del borde en hex
+
+    - padding: Para establecer un espacio entre el borde y los contenidos
+               
+            - 1 valor: se aplica a los 4 lados
+            - 2 valores:
+                    - 1er valor: top/bottom
+                    - 2er valor: left/right
+            - 3 valores:
+                    - 1er valor: top
+                    - 2er valor: left/right
+                    - 3er valor: bottom
+            - 4 valores:
+                    - 1er valor: top
+                    - 2er valor: right
+                    - 3er valor: bottom
+                    - 4er valor: left
+        
+        Propiedades específicas de padding:
+            - padding-top
+            - padding-right
+            - padding-bottom
+            - padding-left
+                   
+    - margin: Para establecer un espacio entre el borde y otros elementos
+
+        Propiedades específicas de margin:
+            - padding-top
+            - padding-right
+            - padding-bottom
+            - padding-left
+
+
+    - width: valor en [px / % / em]
+    - height: valor en [px / % / em]
+*/
+
+/*.section-services {
+    /*
+    background: #CC914E url(../images/bg-header.jpg) no-repeat center center fixed;
+    background-color: #CC914E;
+    background-image: url(../images/bg-header.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+     
+    border: 1px solid #874243; 
+    padding: 10px 20px 30px 40px;
+    margin: 10px;
+    
+}*/
+}
+
+main h2{
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #0E5F77;
+}
+
+main img{
+    max-width: 300px;
+    border: 5px solid #fff;
+    box-shadow: 0px 0px 20px #666;
+}
+
+footer {
+    background-color: #666;
+    text-align: center;
+    color: #ccc;
+    padding: 16px 0;
+}
+
+footer p{
+    margin: 0;
+}
