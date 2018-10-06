@@ -1,10 +1,17 @@
 @charset "UTF-8";
 
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
+
+/* Font Awesome */
+@import url('lib/all.css');
+
 /* Generals */
 body {
     margin: 0;
     font-size: 16px;    
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Didact Gothic', sans-serif;
+
 }
 
 ol, ul {
@@ -21,6 +28,9 @@ img {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 10px;
+}
+h2:first-child {
+    margin-top: 0;
 }
 
 /* Header */
@@ -63,9 +73,31 @@ img {
  }
 
 /* Main */
-
+.page-main {
+    padding:  65px 0;
+}
+.left {
+    width:  32.33%;
+    float: left;
+    padding-right: 1%;
+}
+.right {
+    width:  65.66%;  
+    float: right; 
+    padding-left: 1%;
+}
 
 /* Footer */
+.page-footer {
+    background-color: #333;
+    padding: 15px 0;
+  
+}
+.page-footer p {
+    text-align: center;
+    color: #ccc;
+    margin: 0px;
+}
 
 /* Helpers */
 .clearfix:before,
