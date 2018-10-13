@@ -99,6 +99,20 @@ h2:first-child {
     margin: 0px;
 }
 
+/* Galería */
+.gallery-list  li {
+    display: inline-block;
+    margin: 10px;
+}
+.gallery-list img {
+    border: 5px solid #ffffff;
+    box-shadow: 0 0 6px #999;
+    transition: all .3s;    
+}
+.gallery-list img:hover {
+    box-shadow: 0 0 12px #999;
+}
+
 /* Helpers */
 .clearfix:before,
 .clearfix:after {
