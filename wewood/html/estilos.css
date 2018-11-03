@@ -34,7 +34,7 @@ section#relojes{
 section#nosotros{
 	width: 1024px;
 	height: 748px;
-	background-color: #D7FFF1;
+	background-color: #ffffff;
 }
 section#catalogo{
 	width: 1024px;
@@ -44,7 +44,7 @@ section#catalogo{
 section#contacto{
 	width: 1024px;
 	height: 615px;
-	background-color:#DAFFFB;
+	background-color:#FFFFFF;
 }
 footer{
 	width: 1024px;
@@ -121,6 +121,8 @@ div.boxRelojes h3{
 	padding-right: 10px;
 	text-align: right;
 }
+
+
 div#centrarNosotros{
 	width: 846px;
 	height: 550px;
@@ -159,13 +161,18 @@ div.boxCatalogo{
 	height: 587px;
 	background-color: #461C31;
 	float: left;
-	margin-top: 66px;
-	margin-right: 12px;
+	margin-top: 50px;
+	margin-left: 12px;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+	-moz-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+	-ms-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+	-o-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
 div.boxCatalogo h3{
 	color: #B14E80;
 	font-size: 38px;
-	font-family: Gotham, Helvetica Neue, Helvetica, "Arial", "sans-serif";
+	font-family: Arial, Helvetica, sans-serif;
 	margin-top: 69px;
 	text-align: center;
 	font-weight: 700;
@@ -201,9 +208,148 @@ div.boxCatalogo a{
 	margin-bottom: 20px;
 	text-align: center;
 	text-decoration: none;
-	padding-top: 8px;
+	padding-top: 9px;
 }
 div.boxCatalogo a:hover{
 	background-color: #B14E80;
 	color: #461C31;
+}
+
+.super {
+	font-size: 12px;
+	vertical-align: top;
+	line-height: 28px;
+}
+
+div.boxCatalogo img {
+	margin-left: auto;
+	margin-right: auto;
+	display:block;
+}
+
+div#mapa{
+	width: 1024px;
+	height: 160px;
+	background-color: chocolate;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+div#formulario {
+	width: 340px; 
+	height: 320px;
+	float: left;
+	margin-left: 70px;
+}
+
+div#video {
+	width: 515px;
+	height: 320px;
+	background-color: pink;
+	float: left;
+	margin-left: 70px;
+}
+
+table {
+	width: 324px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.campo {
+	width: 324px;
+	height: 30px;
+	border: solid 1px #B14E80;
+	border-radius: 8px;
+	margin-bottom: 10px;
+	background-color: transparent;
+	padding-left: 10px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size: 14px;
+	font-weight: 100;
+	color: #B14E80
+}
+
+.altura {
+	height: 120px;
+	padding-top: 10px;
+	resize: none; /* Para quitar el cambio de tamaño del textarea*/
+}
+
+/* Safari y Chrome*/
+::-webkit-input-placeholder{color: #B14E80;}
+/* Mozila Firefox*/
+::-moz-input-placeholder{color: #B14E80;}
+/* Microsoft IE*/
+::-ms-input-placeholder{color: #B14E80;}
+/* Opera*/
+::-o-input-placeholder{color: #B14E80;}
+/* Universal*/
+input-placeholder{color: #B14E80;}
+
+.enviar {
+	width: 87px;
+	height: 30px;
+	border: solid 1px #B14E80;
+	border-radius: 8px;
+	text-align: center;
+	background-color: transparent;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size: 14px;
+	font-weight: 100px;
+	color: #B14E80;
+	float: right;
+	cursor:pointer;
+	
+}
+.enviar:hover {
+	background-color: #B14E80;
+	color: #ffffff;
+}
+
+footer h2 {
+	color: #FFFFFF;
+	font-size: 18px;
+	float: left;
+	margin-left: 15px;
+	margin-top: 15px;
+	font-weight: 200px;
+}
+div#facebook {
+	width: 7px;
+	height: 13px;
+	background-image: url(img/facebook.svg);
+	float: right;
+	margin-top: 20px;
+	margin-right: 15px;
+}
+
+div#facebook:hover {
+background-image: url(img/facebook2.svg);
+}
+
+div#twitter {
+	width: 13.28px;
+	height: 10.77px;
+	background-image: url(img/twitter.svg);
+	float: right;
+	margin-top: 20px;
+	margin-right: 15px;
+}
+
+div#twitter:hover {
+background-image: url(img/twitter2.svg);
+}
+
+div#instagram {
+	width: 13.28px;
+	height: 13.28px;
+	background-image: url(img/instagram.svg);
+	float: right;
+	margin-top: 20px;
+	margin-right: 15px;
+}
+
+div#instagram:hover {
+background-image: url(img/instagram2.svg);
 }
